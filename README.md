@@ -1,70 +1,108 @@
-# PDF BUDDY
+# PDF Buddy – PDF Utility Application
 
-PDF BUDDY is a powerful and user-friendly Python-based application designed to handle various PDF operations. It includes features like merging, splitting, encryption, conversion, and OCR-based text extraction, along with a secure login system that stores credentials in a CSV file.
+A Python desktop application designed to provide a graphical interface for working with PDF documents.
+
+## Overview
+
+PDF Buddy is a desktop-based PDF utility project developed using Python and Tkinter.
+
+The application explores desktop GUI development, file handling, document processing, and user interaction.
 
 ## Features
 
-### 📌 Merge PDFs
-- Combine multiple PDF files into a single document seamlessly.
+Add the actual supported PDF operations here, such as:
 
-### 📌 Split PDFs
-- Extract specific pages or split a PDF into multiple files.
+- PDF file selection
+- PDF document processing
+- Page extraction
+- PDF merging
+- PDF splitting
+- Document conversion
+- Page organisation
 
-### 🔐 Encrypt PDFs
-- Secure your PDFs with password protection.
-- Decrypt password-protected PDFs when needed.
+Remove any operation that is not implemented.
 
-### 🔄 Convert PDFs
-- Convert PDFs to different formats such as **Word, Image, or Text**.
+## Technology Stack
 
-### 📝 Extract Text Using OCR
-- Use **Optical Character Recognition (OCR)** to extract text from scanned PDFs.
-
-### 🔑 Store Login Credentials
-- Securely store user login details in a CSV file for authentication.
+| Component | Technology |
+|---|---|
+| Language | Python |
+| GUI | Tkinter |
+| PDF Processing | PyPDF2 / actual library used |
+| File Handling | Python standard library |
 
 ## Installation
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/PDF-BUDDY.git
-   cd PDF-BUDDY
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```sh
-   python main.py
-   ```
+```bash
+git clone YOUR_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+```
 
-## Dependencies
-Ensure you have the following libraries installed:
-```sh
-pip install PyPDF2 pdf2image pytesseract pandas tkinter
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Application
+
+Use the actual Python entry-point file. For example, if the main file is `main.py`:
+
+```bash
+python main.py
 ```
 
 ## Usage
-- **Launch the application** and select the desired PDF operation.
-- **Upload PDFs**, configure options, and process the files.
-- **Save the output** to the desired location.
+
+1. Start the application.
+2. Select the required PDF operation.
+3. Choose the input document.
+4. Configure the operation.
+5. Select the output destination.
+6. Review the generated PDF.
+
+## Error Handling
+
+Document how the application handles:
+
+- Invalid PDF files
+- Missing files
+- Permission errors
+- Unsupported document formats
+- Empty input
+- Output file conflicts
+
+## Future Improvements
+
+- Improved GUI design
+- PDF preview
+- Batch processing
+- Drag-and-drop file support
+- Better error reporting
+- Automated testing
+
+## Author
+
+Abhi Sharma
+
+GitHub: https://github.com/itsAbhisharma2905
 
 ## Download & Application Files
 You can download the application and its related data from the following Google Drive link:
 🔗 [Download PDF BUDDY](https://drive.google.com/drive/folders/1geQUr4TLLOld9bT_InTooF7_5Ai30UhS?usp=sharing)
 
-## Future Enhancements
-- Adding cloud storage support.
-- Implementing a graphical user interface (GUI) for better user experience.
-- Multi-user authentication with database integration.
 
 ## License
 This project is open-source and available under the MIT License.
-
-## Contributing
-Feel free to fork this repository and contribute! Submit pull requests with new features or improvements.
-
-## Contact
-For any queries, reach out to abhi.sharma2905@gmail.com or open an issue in the repository.
-
